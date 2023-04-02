@@ -1,0 +1,4 @@
+
+class Instruction {
+    perform(bug) {}
+}

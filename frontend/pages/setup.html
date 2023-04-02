@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Setup</title>
+    <link rel="stylesheet" type="text/css" href="../styles/common.css">
+    <link rel="stylesheet" type="text/css" href="../styles/setup.css">
+</head>
+<body>
+<div class="container">
+    <h1>Bug World</h1>
+    <form id="settings_form" method="post" action="">
+        <label>Please upload a world map file:</label>
+        <div class="form_part">
+            <input type="file" id="world_map_file" name="world_map" accept=".txt"><br>
+        </div>
+
+        <label>Please upload a bug assembler source code file #1:</label>
+        <div class="form_part">
+            <input type="file" id="first_bug_assembler_file_form" name="first_bug" accept=".txt"><br>
+        </div>
+
+        <label>Please upload a bug assembler source code file #2:</label>
+        <div class="form_part">
+            <input type="file" id="second_bug_assembler_file_form" name="second_bug" accept=".txt"><br>
+        </div>
+
+        <label for="iterations_count_form">Please select the number of iterations:</label>
+        <div class="form_part">
+            <input type="number" id="iterations_count_form" name="iterations_count" min="1" max="1000" value="10"><br>
+        </div>
+
+        <label for="logging_check_box_form">Do you want to log the results of the session?</label>
+        <div class="form_part">
+            <input type="checkbox" id="logging_check_box_form" name="logging_check_box"><br>
+        </div>
+
+    </form>
+
+    <div class="button_container">
+        <button id="button_to_simulation_page" onclick="">Go!</button>
+    </div>
+</div>
+</body>
+</html>
